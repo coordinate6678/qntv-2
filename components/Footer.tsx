@@ -16,8 +16,7 @@ export default function Footer() {
           <span>Quontive</span>
         </a>
         <div className="foot-links">
-          <a href="https://www.quontive.com/gizlilik-politikasi">Gizlilik Politikası</a>
-          <a href="https://www.quontive.com/kvkk">KVKK</a>
+          {/* TODO: /gizlilik-politikasi ve /kvkk sayfaları yayınlanınca linkler geri eklenecek. */}
         </div>
         <span>© 2026 Quontive. Tüm hakları saklıdır.</span>
       </div>

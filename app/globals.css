@@ -958,3 +958,12 @@ footer {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* honeypot — ekran dışı, botlar doldursun diye DOM'da */
+.hp-field {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

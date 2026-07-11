@@ -22,6 +22,16 @@ export default function Metrics() {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const counters = document.querySelectorAll("[data-count]");
 
+    // SSR final değeri basar (SEO/no-JS için); animasyon olacaksa
+    // görünüme girmeden önce 0'a çek ki final→0 sıçraması olmasın.
+    if (!reduced) {
+      counters.forEach((c) => {
+        const el = c as HTMLElement;
+        const dec = +(el.dataset.dec || "0");
+        el.textContent = (0).toFixed(dec);
+      });
+    }
+
     const cio = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {

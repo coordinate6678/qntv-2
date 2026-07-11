@@ -1,11 +1,11 @@
 import Reveal from "./Reveal";
 
 const brands = [
-  { src: "https://www.quontive.com/brands/volvo.svg", alt: "Volvo", width: 110, height: 34 },
-  { src: "https://www.quontive.com/brands/pepsi.svg", alt: "Pepsi", width: 110, height: 34 },
-  { src: "https://www.quontive.com/brands/volkswagen.svg", alt: "Volkswagen", width: 110, height: 34 },
-  { src: "https://www.quontive.com/brands/migros.svg", alt: "Migros", width: 110, height: 34 },
-  { src: "https://www.quontive.com/brands/akbank.svg", alt: "Akbank", width: 110, height: 34 },
+  { src: "/brands/volvo.svg", alt: "Volvo", width: 110, height: 34 },
+  { src: "/brands/pepsi.svg", alt: "Pepsi", width: 110, height: 34 },
+  { src: "/brands/volkswagen.svg", alt: "Volkswagen", width: 110, height: 34 },
+  { src: "/brands/migros.svg", alt: "Migros", width: 110, height: 34 },
+  { src: "/brands/akbank.svg", alt: "Akbank", width: 110, height: 34 },
 ];
 
 const trackBrands = [...brands, ...brands];

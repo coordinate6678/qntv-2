@@ -191,14 +191,14 @@ export default function Hero() {
         </div>
         <div className="partners">
           <PartnerBadge
-            src="https://www.quontive.com/google-premier-partner.png"
+            src="/google-premier-partner.png"
             alt="Google Premier Partner"
             width={132}
             height={44}
             fallback="Google Premier Partner"
           />
           <PartnerBadge
-            src="https://www.quontive.com/meta-business-partner.png"
+            src="/meta-business-partner.png"
             alt="Meta Business Partner"
             width={100}
             height={44}

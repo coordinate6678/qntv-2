@@ -19,6 +19,7 @@ export default function Contact() {
     const name = (form.elements.namedItem("name") as HTMLInputElement).value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+    const company = (form.elements.namedItem("company") as HTMLInputElement).value;
 
     setStatus("loading");
     setStatusMessage("");
@@ -27,7 +28,7 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, company }),
       });
       const data = (await res.json()) as { success?: boolean; error?: string };
 
@@ -79,6 +80,10 @@ export default function Contact() {
           </Reveal>
           <Reveal delay={1}>
             <form className="form" onSubmit={handleSubmit} id="contactForm">
+            <div className="hp-field" aria-hidden="true">
+              <label htmlFor="f-company">Şirket</label>
+              <input id="f-company" name="company" type="text" tabIndex={-1} autoComplete="off" />
+            </div>
             <div>
               <label htmlFor="f-name">Ad Soyad</label>
               <input id="f-name" name="name" type="text" required autoComplete="name" />

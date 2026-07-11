@@ -474,6 +474,13 @@ h1 em {
   font-size: 0.84rem;
   line-height: 1.5;
 }
+.metrics-note {
+  max-width: 72ch;
+  margin-top: 28px;
+  color: #a6a399;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
 .counter-row {
   margin-top: 80px;
   display: grid;
@@ -794,6 +801,11 @@ h2 {
   width: auto;
   margin-top: 3px;
   accent-color: var(--clay);
+}
+.consent a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .form .btn {
   align-self: flex-start;

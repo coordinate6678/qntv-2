@@ -99,8 +99,8 @@ export default function Contact() {
             <label className="consent">
               <input type="checkbox" required />
               <span>
-                Şirket aydınlatma metnini okudum ve kişisel verilerimin bu kapsamda işlenmesine açık rıza
-                veriyorum.
+                Şirket <a href="/kvkk" target="_blank" rel="noreferrer">aydınlatma metnini</a> okudum ve
+                kişisel verilerimin bu kapsamda işlenmesine açık rıza veriyorum.
               </span>
             </label>
             {statusMessage && (

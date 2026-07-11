@@ -105,15 +105,15 @@ export default function Nav() {
         >
           <a href="#neden-biz" onClick={closeMenu}>Neden Biz</a>
           <a href="#kabiliyetler" onClick={closeMenu}>Kabiliyetler</a>
-          <a href="#yayincilarimiz" onClick={closeMenu}>Yayıncılarımız</a>
+          <a href="#yayincilarimiz" onClick={closeMenu}>Markalar</a>
           <a href="#surec" onClick={closeMenu}>Süreç</a>
           <a href="#contact" onClick={closeMenu}>İletişim</a>
-          <a href="https://www.quontive.com/yayinci-giris" className="nav-mobile-only">Yayıncı</a>
-          <a href="https://www.quontive.com/reklamveren-giris" className="nav-mobile-only">Reklamveren</a>
+          <a href="#contact" onClick={closeMenu} className="nav-mobile-only">Yayıncı</a>
+          <a href="#contact" onClick={closeMenu} className="nav-mobile-only">Reklamveren</a>
         </div>
         <div className="nav-sub">
-          <a href="https://www.quontive.com/yayinci-giris">Yayıncı</a>
-          <a href="https://www.quontive.com/reklamveren-giris">Reklamveren</a>
+          <a href="#contact">Yayıncı</a>
+          <a href="#contact">Reklamveren</a>
         </div>
         <button
           className="menu-btn"

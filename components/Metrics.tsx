@@ -96,7 +96,7 @@ export default function Metrics() {
         </div>
 
         <Reveal as="span" className="m-eyebrow">
-          Canlı Performans Metrikleri
+          Kampanya Performans Ortalamaları
         </Reveal>
         <div className="live-grid">
           <Reveal className="live">
@@ -132,6 +132,12 @@ export default function Metrics() {
             <p>Filtrelenmiş trafiğe karşı fraud tespit ve engelleme</p>
           </Reveal>
         </div>
+        <Reveal className="metrics-note">
+          <p>
+            Gösterilen değerler geçmiş kampanya sonuçlarının ortalamalarıdır. Performans; hedef, dönem,
+            kreatif ve kullanılan envantere göre değişebilir.
+          </p>
+        </Reveal>
 
         <div className="counter-row">
           <Reveal className="counter">

@@ -66,9 +66,16 @@ export async function POST(request: Request) {
     const to = process.env.CONTACT_TO_EMAIL ?? "info@quontive.com";
 
     if (!apiKey) {
-      // Geliştirme ortamı: anahtar yoksa logla ve geç.
-      console.log("Contact form submission (RESEND_API_KEY yok):", { name, email, message });
-      return NextResponse.json({ success: true });
+      if (process.env.NODE_ENV === "development") {
+        console.log("Contact form submission (RESEND_API_KEY yok):", { name, email, message });
+        return NextResponse.json({ success: true });
+      }
+
+      console.error("Contact form is unavailable: RESEND_API_KEY is missing.");
+      return NextResponse.json(
+        { success: false, error: "İletişim formu geçici olarak kullanılamıyor." },
+        { status: 503 },
+      );
     }
 
     const resend = new Resend(apiKey);

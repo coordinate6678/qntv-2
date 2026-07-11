@@ -15,11 +15,11 @@ export default function Publishers() {
     <section className="pubs" id="yayincilarimiz">
       <div className="wrap">
         <Reveal className="sec-head" style={{ marginBottom: 0 }}>
-          <span className="sec-eyebrow">Yayıncılarımız</span>
-          <h2>Premium yayın ağı, güvenli erişim.</h2>
+          <span className="sec-eyebrow">Çalıştığımız Markalar</span>
+          <h2>Ölçülebilir kampanyalar, güçlü markalar.</h2>
           <p className="lead" style={{ marginTop: 18 }}>
-            Haber, ekonomi, spor, teknoloji ve yaşam kategorilerinde premium yayın ağımız ile markalarınıza
-            ölçekli ve güvenli erişim sağlıyoruz.
+            Farklı sektörlerden markalar için premium dijital envanter üzerinde ölçekli, güvenli ve
+            performans odaklı kampanyalar yürütüyoruz.
           </p>
         </Reveal>
         <Reveal className="logo-strip" aria-hidden="true">

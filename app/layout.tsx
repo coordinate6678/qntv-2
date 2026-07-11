@@ -68,7 +68,7 @@ const jsonLd = {
       "@type": "Organization",
       name: "Quontive",
       url: "https://www.quontive.com/",
-      logo: "https://www.quontive.com/logo.png",
+      logo: "https://www.quontive.com/icon.svg",
       email: "info@quontive.com",
       address: {
         "@type": "PostalAddress",

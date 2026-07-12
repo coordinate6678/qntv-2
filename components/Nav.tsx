@@ -72,7 +72,7 @@ export default function Nav() {
   return (
     <nav id="nav" ref={navRef} aria-label="Ana menü">
       <div className="nav-inner">
-        <a href="#" className="logo" id="brand" ref={brandRef} aria-label="Quontive">
+        <a href={String("/")} className="logo" id="brand" ref={brandRef} aria-label="Quontive">
           <span className="brand-stack" aria-hidden="true">
             <span className="brand-word">
               <span className="bq">Q</span>
@@ -103,17 +103,17 @@ export default function Nav() {
           id="navLinks"
           ref={navLinksRef}
         >
-          <a href="#neden-biz" onClick={closeMenu}>Neden Biz</a>
-          <a href="#kabiliyetler" onClick={closeMenu}>Kabiliyetler</a>
-          <a href="#yayincilarimiz" onClick={closeMenu}>Markalar</a>
-          <a href="#surec" onClick={closeMenu}>Süreç</a>
-          <a href="#contact" onClick={closeMenu}>İletişim</a>
-          <a href="#contact" onClick={closeMenu} className="nav-mobile-only">Yayıncı</a>
-          <a href="#contact" onClick={closeMenu} className="nav-mobile-only">Reklamveren</a>
+          <a href={String("/#neden-biz")} onClick={closeMenu}>Neden Biz</a>
+          <a href={String("/#kabiliyetler")} onClick={closeMenu}>Kabiliyetler</a>
+          <a href={String("/#yayincilarimiz")} onClick={closeMenu}>Markalar</a>
+          <a href={String("/#surec")} onClick={closeMenu}>Süreç</a>
+          <a href={String("/#contact")} onClick={closeMenu}>İletişim</a>
+          <a href={String("/#contact")} onClick={closeMenu} className="nav-mobile-only">Yayıncı</a>
+          <a href={String("/#contact")} onClick={closeMenu} className="nav-mobile-only">Reklamveren</a>
         </div>
         <div className="nav-sub">
-          <a href="#contact">Yayıncı</a>
-          <a href="#contact">Reklamveren</a>
+          <a href={String("/#contact")}>Yayıncı</a>
+          <a href={String("/#contact")}>Reklamveren</a>
         </div>
         <button
           className="menu-btn"

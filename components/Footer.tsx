@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="wrap foot">
-        <a href="#" className="logo foot-brand" aria-label="Quontive">
+        <a href={String("/")} className="logo foot-brand" aria-label="Quontive">
           <svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shapeRendering="geometricPrecision">
             <defs>
               <mask id="q-cut-f">

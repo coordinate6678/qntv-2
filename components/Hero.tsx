@@ -182,10 +182,10 @@ export default function Hero() {
           farklı fiyatlama modelleriyle uçtan uca yönetmenizi sağlar.
         </p>
         <div className="hero-actions">
-          <a href="#contact" className="btn btn-primary">
+          <a href={String("/#contact")} className="btn btn-primary">
             Teklif alın <span className="arrow">→</span>
           </a>
-          <a href="#kabiliyetler" className="btn btn-ghost">
+          <a href={String("/#kabiliyetler")} className="btn btn-ghost">
             Kabiliyetleri inceleyin
           </a>
         </div>

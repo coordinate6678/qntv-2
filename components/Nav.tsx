@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const BRAND_SCROLL = [0, 300] as const;
 
@@ -72,7 +73,7 @@ export default function Nav() {
   return (
     <nav id="nav" ref={navRef} aria-label="Ana menü">
       <div className="nav-inner">
-        <a href={String("/")} className="logo" id="brand" ref={brandRef} aria-label="Quontive">
+        <Link href="/" className="logo" id="brand" ref={brandRef} aria-label="Quontive">
           <span className="brand-stack" aria-hidden="true">
             <span className="brand-word">
               <span className="bq">Q</span>
@@ -97,23 +98,23 @@ export default function Nav() {
               </svg>
             </span>
           </span>
-        </a>
+        </Link>
         <div
           className={`nav-links${menuOpen ? " open" : ""}`}
           id="navLinks"
           ref={navLinksRef}
         >
-          <a href={String("/#neden-biz")} onClick={closeMenu}>Neden Biz</a>
-          <a href={String("/#kabiliyetler")} onClick={closeMenu}>Kabiliyetler</a>
-          <a href={String("/#yayincilarimiz")} onClick={closeMenu}>Markalar</a>
-          <a href={String("/#surec")} onClick={closeMenu}>Süreç</a>
-          <a href={String("/#contact")} onClick={closeMenu}>İletişim</a>
-          <a href={String("/#contact")} onClick={closeMenu} className="nav-mobile-only">Yayıncı</a>
-          <a href={String("/#contact")} onClick={closeMenu} className="nav-mobile-only">Reklamveren</a>
+          <Link href="/#neden-biz" onClick={closeMenu}>Neden Biz</Link>
+          <Link href="/#kabiliyetler" onClick={closeMenu}>Kabiliyetler</Link>
+          <Link href="/#yayincilarimiz" onClick={closeMenu}>Markalar</Link>
+          <Link href="/#surec" onClick={closeMenu}>Süreç</Link>
+          <Link href="/#contact" onClick={closeMenu}>İletişim</Link>
+          <Link href="/#contact" onClick={closeMenu} className="nav-mobile-only">Yayıncı</Link>
+          <Link href="/#contact" onClick={closeMenu} className="nav-mobile-only">Reklamveren</Link>
         </div>
         <div className="nav-sub">
-          <a href={String("/#contact")}>Yayıncı</a>
-          <a href={String("/#contact")}>Reklamveren</a>
+          <Link href="/#contact">Yayıncı</Link>
+          <Link href="/#contact">Reklamveren</Link>
         </div>
         <button
           className="menu-btn"

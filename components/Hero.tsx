@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 function PartnerBadge({
   src,
@@ -182,12 +183,12 @@ export default function Hero() {
           farklı fiyatlama modelleriyle uçtan uca yönetmenizi sağlar.
         </p>
         <div className="hero-actions">
-          <a href={String("/#contact")} className="btn btn-primary">
+          <Link href="/#contact" className="btn btn-primary">
             Teklif alın <span className="arrow">→</span>
-          </a>
-          <a href={String("/#kabiliyetler")} className="btn btn-ghost">
+          </Link>
+          <Link href="/#kabiliyetler" className="btn btn-ghost">
             Kabiliyetleri inceleyin
-          </a>
+          </Link>
         </div>
         <div className="partners">
           <PartnerBadge

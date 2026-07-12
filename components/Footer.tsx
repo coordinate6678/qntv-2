@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
       <div className="wrap foot">
-        <a href={String("/")} className="logo foot-brand" aria-label="Quontive">
+        <Link href="/" className="logo foot-brand" aria-label="Quontive">
           <svg viewBox="0 0 104 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" shapeRendering="geometricPrecision">
             <defs>
               <mask id="q-cut-f">
@@ -14,7 +16,7 @@ export default function Footer() {
             <polygon points="48,66 65,66 101,100 84,100" fill="currentColor" />
           </svg>
           <span>Quontive</span>
-        </a>
+        </Link>
         <div className="foot-links">
           <a href="/gizlilik-politikasi">Gizlilik Politikası</a>
           <a href="/kvkk">KVKK</a>

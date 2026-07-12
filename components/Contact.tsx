@@ -6,7 +6,7 @@ import Reveal from "./Reveal";
 function mailtoFallback(name: string, email: string, message: string) {
   const subject = encodeURIComponent(`Web sitesi iletişim formu — ${name}`);
   const body = encodeURIComponent(`${message}\n\n${name} · ${email}`);
-  window.location.href = `mailto:info@quontive.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:hello@quontive.com?subject=${subject}&body=${body}`;
 }
 
 export default function Contact() {
@@ -62,7 +62,7 @@ export default function Contact() {
           <Reveal>
             <div className="c-item">
               <h3>E-posta</h3>
-              <a href="mailto:info@quontive.com">info@quontive.com</a>
+              <a href="mailto:hello@quontive.com">hello@quontive.com</a>
             </div>
             <div className="c-item">
               <h3>Adres</h3>

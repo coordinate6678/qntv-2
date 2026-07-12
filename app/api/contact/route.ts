@@ -63,7 +63,7 @@ export async function POST(request: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const to = process.env.CONTACT_TO_EMAIL ?? "info@quontive.com";
+    const to = process.env.CONTACT_TO_EMAIL ?? "hello@quontive.com";
 
     if (!apiKey) {
       if (process.env.NODE_ENV === "development") {

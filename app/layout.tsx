@@ -69,7 +69,7 @@ const jsonLd = {
       name: "Quontive",
       url: "https://www.quontive.com/",
       logo: "https://www.quontive.com/icon.svg",
-      email: "info@quontive.com",
+      email: "hello@quontive.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Esentepe Mah. Talatpaşa Cad. No: 5/1 Levent",
@@ -80,7 +80,7 @@ const jsonLd = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        email: "info@quontive.com",
+        email: "hello@quontive.com",
         contactType: "customer service",
         availableLanguage: "Turkish",
       },
